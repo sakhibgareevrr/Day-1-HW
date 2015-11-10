@@ -2,9 +2,7 @@ function onClick(): void {
     let myVar: any = (<HTMLInputElement>document.getElementById('userNumber')).value;
     /*let myVar: string = myInput.value;*/
 
-    let value: number = parseFloat(myVar);
-
-    if (isNaN(value)) {
+    if (isNaN(myVar)) {
 
         document.getElementById('display').innerHTML = '<label for="">The input type is invalid. Please re-enter again!</label>';
     } else {
